@@ -55,3 +55,22 @@ function sekkizeBolmeEmeliyyati() {
     }
 
 }
+
+function uchbucag() {
+
+    'use strict';
+
+    let a, b, c;
+    a = prompt('Uchbucagin a terefini daxil edin');
+    b = prompt('Uchbucagin b terefini daxil edin');
+    c = prompt('Uchbucagin c terefini daxil edin');
+    if (a < b + c && b < c + a && c < b + a && a != b && b != c && a != c) {
+        alert('Bu uchbucag muxtelif terefli uchbucagdir');
+    }
+    else if (a == b && b == c && a == c) {
+        alert('Bu uchbucag beraber terefli uchbucagdir.');
+    }
+    else {
+        alert('Bele bir uchbucag qurmaq mumkun deyil.');
+    }
+}
